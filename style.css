@@ -1,0 +1,567 @@
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Backgrounds and Fonts
+   ========================================================================== */
+
+.homepage {
+  /* font-family: 'Bebas Neue', cursive; */
+font-family: 'Averia Serif Libre', cursive;
+  /* font-family: 'Rubik Mono One', sans-serif; */
+  /* background-color: #FFFCC0; */
+  /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(242,237,193,1) 0%, rgba(247,235,116,1) 90.1% ); */
+  /* background: rgb(249,213,174); */
+  background: linear-gradient(90deg, rgba(249,213,174,1) 0%, rgba(246,225,125,1) 50%, rgba(252,180,115,1) 100%);
+  /* border: 25px solid rgb(205, 92, 92); */
+  /* border-bottom: 0; */
+  margin: 0;
+  overflow: auto;
+  box-sizing: border-box;
+  
+}
+
+
+/* html{
+  min-height: 100%;
+   margin: 0;
+   height: 100%;
+} */
+.about {
+  font-family: 'Bebas Neue', cursive;
+  background: rgb(249,213,174);
+  background: linear-gradient(90deg, rgba(249,213,174,1) 0%, rgba(246,225,125,1) 50%, rgba(252,180,115,1) 100%);
+}
+.thoughts{
+  font-family: 'Pragati Narrow', sans-serif;
+  background: rgb(253,252,233);
+  border: 25px solid rgb(205, 92, 92);
+  border-top: 0;
+  border-bottom: 0;;
+ }
+.travels{
+  font-family: 'Bebas Neue', cursive;
+  background: rgb(249,213,174);
+  background: linear-gradient(90deg, rgba(249,213,174,1) 0%, rgba(246,225,125,1) 50%, rgba(252,180,115,1) 100%);
+}
+/* Headers
+   ========================================================================== */
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+  /* overflow: hidden; */
+  width: auto;
+  /* background-color:#FFFCC0; */
+  /* background: rgb(249,213,174);
+  background: linear-gradient(90deg, rgba(249,213,174,1) 0%, rgba(246,225,125,1) 50%, rgba(252,180,115,1) 100%); */
+  transition: 1s ease;
+  height: 40%;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:  rgb(205, 92, 92);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  /* display: block; */
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 14%;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.header-thoughts{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+  overflow: hidden;
+  background: rgb(253,252,233);
+  padding: 0px 0px;
+  align-self: center;
+  transition: 1s ease;
+  height: 25%;
+}
+.logoimage {
+  transition: 1s ease;
+  width: auto;
+  height: 100%;
+}
+.header .logoimage:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+.header-thoughts .logoimage:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+/* Text Styling
+   ========================================================================== */
+.big-intro{
+  color: black;
+  text-align: center;  
+  font-size: 500%;
+  /* border: 3px solid black; */
+  margin-bottom: 1%;
+  /* margin-right: 450px; */
+  /* margin-left: 450px; */
+  text-decoration: underline;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+}
+.small-intro{
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 125%;
+  margin-left: 25%;
+  margin-right: 25%;
+  /* border: 2px solid black; */
+  /* font-family: 'Noto Sans KR', sans-serif; */
+
+}
+.BasePara{
+  color: black;
+  font-size: 150%;
+  text-align: center;
+  margin-bottom: 2%;
+  padding-top: 2%;
+}
+.BasePara p{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+/* Gallery
+   ========================================================================== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 0vw);
+    grid-row-gap: 80px;
+    grid-column-gap:5px;
+    /* height: 100vw; */
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 10%; */
+    /* border: 2px solid black; */
+    border-top: black;
+    
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    transition: 1s ease;
+    border:solid  black;
+
+}
+.gallery__item--2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    transition: 1s ease;
+    border:solid  black;
+
+}
+.gallery__item--3 {
+    grid-column-start: 33;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 14;
+    transition: 1s ease;
+}
+.gallery__item--4 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    transition: 1s ease;
+    border:solid  black;
+}
+.gallery__item--5 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    transition: 1s ease;
+    border-top: solid black;
+    border-bottom: solid black;
+}
+.gallery__item--6 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    transition: 1s ease;
+}
+.gallery__item--7 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    transition: 1s ease;
+}
+.gallery__item--9 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 13;
+    transition: 1s ease;
+    
+}
+
+.gallery .gallery__item--1:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+.gallery .gallery__item--2:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+.gallery .gallery__item--3:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+.gallery .gallery__item--4:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+.gallery .gallery__item--5:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+.gallery .gallery__item--6:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+.gallery .gallery__item--7:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+.gallery .gallery__item--9:hover{
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.gallery p{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.BigMe{
+  width: 50%;
+  margin: 0 auto;
+  transition: 1s ease;
+}
+.BigMe:hover{
+  opacity: .25;
+  cursor: pointer;
+}
+.BigMe img{
+ border: solid black;
+object-fit: cover;
+}
+
+.BigMe p{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+
+/* About
+   ========================================================================== */
+
+.portrait{
+  width: 80%;
+  height: 100%;
+  background-size: 100% 100%;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+}
+.portrait-img{
+  border-radius: 20%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  align-self: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-right: hidden;
+  border-left: hidden;
+}
+
+.unbold{
+  font-weight: lighter;
+}
+.portrait-div{
+  background-image: url("/imgs/IMG_2256.JPG");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
+}
+.miscimg{
+  width: 100%;
+  height: 100%;
+    object-fit: cover;
+}
+.word-background{
+
+  font-size: 500%;
+}
+
+.article-links{
+  width: 100%;
+  height: auto;
+  border-top:solid #000;
+  border-bottom: solid black;
+  background-color: rgb(253,252,233);
+  text-align: center;
+  font-size: 300%;
+}
+
+.article-links li:hover{
+  cursor: pointer;
+  transition: 1s;
+  background: rgb(205, 92, 92);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 100%;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.slideshow-img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-nomargin{
+
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto;
+  align-items: center;
+  height: 25%;
+  position:absolute;
+  top: 0; left: 0;  right: 0;
+  transition: 1s;
+}
+.logoimage-nomargin {
+  width: auto;
+  height: 100%;
+}
+.header-nomargin .logoimage-nomargin:hover{
+  cursor: pointer;
+  opacity: .4;
+  transition: 1s;
+}
+#map{
+  width: 100%;
+  height: 400px;
+  margin-right: 2%;
+  /* margin-left: 2%; */
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+
+
+
+.Article p{
+  font-size: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* margin-top: 0; */
+}
+.Article-title{
+  margin-left: 1%;
+  margin-top: 3%;
+  text-align: center;
+}
+.copyright{
+  /* text-align: center; */
+}
+
+.portfolio {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 8px 0px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  display: block;
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+.content p{
+  font-size:150%;
+
+}
+.content h3{
+  font-size: 200%;
+}
+.content:hover{
+  cursor: pointer;
+
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

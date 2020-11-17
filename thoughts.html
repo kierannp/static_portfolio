@@ -1,0 +1,71 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kieran Nehil</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap" rel="stylesheet">
+  <meta name="author" content="Kieran Nehil">
+</head>
+
+<body class="thoughts">
+<div class="header-thoughts">
+  <img class="logoimage" onclick="window.location.href='index.html';" src="cfa18c749773c0e01b3aae98f82f1f07.png" alt="Logo" width="100" height="100">
+</div>
+
+<div class="article-links">
+  <ul>
+    <li onclick="window.location.href='article1.html';">The Boy on The Sidewalk</li>
+    <li onclick="window.location.href='article2.html';">Da Vinci’s Wire</li>
+    <li onclick="window.location.href='article3.html';">Disappear</li>
+    <li onclick="window.location.href='/Thoughts/Dragon';">Facing The Dragon</li>
+  </ul>
+</div>
+<!-- 
+<div class="Row">
+
+<button type="button"  class="collapsible">First Article</button>
+<div class="content">
+  <p>Lorem ipsum...</p>
+</div>
+<button type="button"  class="collapsible">Second Article</button>
+<div class="content">
+  <p>Lorem ipsum...</p>
+</div>
+<button type="button" class="collapsible"> Third Article</button>
+<div class="content">
+  <p>Lorem ipsum...</p>
+</div>
+<button type="button" class="collapsible"> Fourth Article</button>
+<div class="content">
+  <p>Lorem ipsum...</p>
+</div>
+<button type="button" class="collapsible"> Fifth Article</button>
+<div class="content">
+  <p>Lorem ipsum...</p>
+</div>
+<button type="button" class="collapsible"> Sixth Article</button>
+<div class="content">
+  <p>Lorem ipsum...</p>
+</div>
+</div> -->
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
