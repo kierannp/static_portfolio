@@ -74,21 +74,6 @@ font-family: 'Averia Serif Libre', cursive;
   width: 100%;
 }
 
-.navbar a {
-  float: left;
-  /* display: block; */
-  display: flex;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 0px 14%;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
 .header-thoughts{
   width: 100%;
   display: flex;
@@ -526,8 +511,11 @@ object-fit: cover;
   display: block;
   float: left;
   width: 33%;
+  
 }
-
+.column img{
+    border: solid black;
+}
 /* Clear floats after rows */ 
 .row:after {
   content: "";
@@ -564,4 +552,37 @@ object-fit: cover;
   .column {
     width: 100%;
   }
+}
+
+
+.topnav a {
+  float: ;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(27, 22, 22);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.project_picture{
+  display: grid;
+  height: 100%;
+  
+}
+.project_picture img {
+  max-width: 80%;
+  max-height: 100vh;
+  margin: auto;
+  border: solid black;
+  object-fit: cover;
 }
