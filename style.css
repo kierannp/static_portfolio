@@ -574,9 +574,22 @@ object-fit: cover;
   color: rgb(255, 255, 255);
 }
 
+
+.project_intro{
+  padding: 50px 16px;
+  text-align: center;
+}
+.project_intro p {
+    text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.project_intro h1{
+    text-decoration: underline;
+}
 .project_picture{
   display: grid;
-  height: 100%;
+  /* height: 100%; */
   
 }
 .project_picture img {
@@ -585,4 +598,9 @@ object-fit: cover;
   margin: auto;
   border: solid black;
   object-fit: cover;
+}
+.project_picture p {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
