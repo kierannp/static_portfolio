@@ -524,7 +524,7 @@ object-fit: cover;
 
 /* Content */
 .content {
-  background-color: white;
+  background-color: rgb(253,252,233);
   padding: 10px;
   text-align: center;
 }
