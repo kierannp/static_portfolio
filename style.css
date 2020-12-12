@@ -109,13 +109,12 @@ font-family: 'Averia Serif Libre', cursive;
   margin-bottom: 1%;
   /* margin-right: 450px; */
   /* margin-left: 450px; */
-  text-decoration: underline;
   /* font-family: 'Noto Sans KR', sans-serif; */
 }
 .small-intro{
   text-align: center;
   margin-bottom: 2%;
-  font-size: 125%;
+  font-size: 175%;
   margin-left: 25%;
   margin-right: 25%;
   /* border: 2px solid black; */
@@ -554,24 +553,26 @@ object-fit: cover;
   }
 }
 
-
 .topnav a {
-  float: ;
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  width : 25%;
+  padding: 30px 40px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topnav a:hover {
-  background-color: rgb(27, 22, 22);
+  background-color:  rgb(205, 92, 92);
   color: black;
+  cursor: pointer;
 }
 
 .topnav a.active {
   background-color: #000000;
-  color: rgb(255, 255, 255);
+  color: rgb(205, 92, 92);
 }
 
 
