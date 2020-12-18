@@ -153,7 +153,7 @@ font-family: 'Averia Serif Libre', cursive;
 }
 .gallery__item--1 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 6;
     transition: 1s ease;
@@ -161,8 +161,8 @@ font-family: 'Averia Serif Libre', cursive;
 
 }
 .gallery__item--2 {
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 6;
+    grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 6;
     transition: 1s ease;
