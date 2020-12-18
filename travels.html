@@ -58,16 +58,8 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
-<br>
+<img  id="map" src="https://maps.googleapis.com/maps/api/staticmap?center=30,-20&zoom=2&scale=false&size=640x400&maptype=roadmap&key=AIzaSyDmIhbLoznuw6boIdZ8aeBiQ1gJqGItMgw&format=png&visual_refresh=true&markers=size:small%7Ccolor:0xff0000%7Clabel:%7C8.9952,76.6105&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C28.2096,83.9856&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C19.0760,72.8777&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C27.0410,88.2663&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C27.7172,85.3240&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C37.7749,+-122.4194&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C32.705002,-97.1081&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C32.4794,-80.3348&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C42.7325,-84.5555&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C45.2618,-111.3080&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C38.8697146,-106.9878231&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C34.483696,-114.3224548&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C43.4261809,-73.7123408&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C27.6648,-81.5158&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C35.2220,-101.8313&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C44.4280,-110.5885&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C41.8781,-87.6298&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C-1.2420,29.9856&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C18.2208,-66.5901&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C17.7612,-88.0277&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C20.6534,-105.2253&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C51.2538,-85.3232&markers=size:small%7Ccolor:0xff0000%7Clabel:1%7C.3476,32.5825" alt="Travels Map">
 
-<!-- <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div> -->
-
-<div id="map">
-</div>
 <script>
   var slideIndex = 1;
   showSlides(slideIndex);
@@ -95,73 +87,73 @@
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
   }
-  function initMap() {
-      // The location of Uluru
-      //India-Nepal
-      var kerala = { lat: 8.9952, lng: 76.6105 };
-      var pokhara = { lat: 28.2096, lng: 83.9856 };
-      var Mumbai = { lat: 19.0760, lng: 72.8777};
-      var darjeeling = { lat: 27.0410, lng: 88.2663 };
-      var Kathmandu = { lat: 27.7172, lng: 85.3240 };
+  // function initMap() {
+  //     // The location of Uluru
+  //     //India-Nepal
+  //     var kerala = { lat: 8.9952, lng: 76.6105 };
+  //     var pokhara = { lat: 28.2096, lng: 83.9856 };
+  //     var Mumbai = { lat: 19.0760, lng: 72.8777};
+  //     var darjeeling = { lat: 27.0410, lng: 88.2663 };
+  //     var Kathmandu = { lat: 27.7172, lng: 85.3240 };
 
-      //USA
-      var cali = { lat: 37.7749, lng: -122.4194 };
-      var tx = { lat: 32.705002, lng: -97.1081 };
-      var sc = { lat: 32.4794, lng: -80.3348 };
-      var mi = { lat: 42.7325, lng: -84.5555 };
-      var bigsky = { lat: 45.2618, lng: -111.3080 };
-      var crestedbutte = { lat: 38.8697146, lng: -106.9878231 };
-      var az = { lat: 34.483696, lng: -114.3224548 };
-      var ny = { lat: 43.4261809, lng: -73.7123408};
-      var fl = { lat: 27.6648, lng: -81.5158 };
-      var amarillo = { lat: 35.2220, lng: -101.8313 };
-      var yellowstone = { lat: 44.4280, lng: -110.5885 };
-      var chicago = { lat: 41.8781, lng: -87.6298 };
+  //     //USA
+  //     var cali = { lat: 37.7749, lng: -122.4194 };
+  //     var tx = { lat: 32.705002, lng: -97.1081 };
+  //     var sc = { lat: 32.4794, lng: -80.3348 };
+  //     var mi = { lat: 42.7325, lng: -84.5555 };
+  //     var bigsky = { lat: 45.2618, lng: -111.3080 };
+  //     var crestedbutte = { lat: 38.8697146, lng: -106.9878231 };
+  //     var az = { lat: 34.483696, lng: -114.3224548 };
+  //     var ny = { lat: 43.4261809, lng: -73.7123408};
+  //     var fl = { lat: 27.6648, lng: -81.5158 };
+  //     var amarillo = { lat: 35.2220, lng: -101.8313 };
+  //     var yellowstone = { lat: 44.4280, lng: -110.5885 };
+  //     var chicago = { lat: 41.8781, lng: -87.6298 };
 
-      //misc
-      var kabale = { lat: -1.2420, lng: 29.9856 };
-      var pr = { lat: 18.2208, lng: -66.5901 };
-      var belize = { lat: 17.7612, lng: -88.0277 };
-      var mexico = { lat: 20.6534, lng: -105.2253 };
-      var ontario = { lat: 51.2538 , lng: -85.3232};
-      var kampala = { lat: .3476, lng: 32.5825 };
+  //     //misc
+  //     var kabale = { lat: -1.2420, lng: 29.9856 };
+  //     var pr = { lat: 18.2208, lng: -66.5901 };
+  //     var belize = { lat: 17.7612, lng: -88.0277 };
+  //     var mexico = { lat: 20.6534, lng: -105.2253 };
+  //     var ontario = { lat: 51.2538 , lng: -85.3232};
+  //     var kampala = { lat: .3476, lng: 32.5825 };
  
-      // The map, centered at Uluru
-      var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 3, center: { lat:30, lng: 0} });
-      // The marker, positioned at Uluru
-      //USA
-      var marker5 = new google.maps.Marker({ position: cali, map: map });
-      var marker6 = new google.maps.Marker({ position: tx, map: map });
-      var marker7 = new google.maps.Marker({ position: sc, map: map });
-      var marker8 = new google.maps.Marker({ position: mi, map: map });
-      var marker11 = new google.maps.Marker({ position: bigsky, map: map });
-      var marker13 = new google.maps.Marker({ position: crestedbutte, map: map });
-      var marker14 = new google.maps.Marker({ position: az, map: map });
-      var marker15 = new google.maps.Marker({ position: ny, map: map });
-      var marker17 = new google.maps.Marker({ position: fl, map: map });
-      var marker18 = new google.maps.Marker({ position: amarillo, map: map });
-      var marker19 = new google.maps.Marker({ position: yellowstone, map: map });
-      var marker20 = new google.maps.Marker({ position: chicago, map: map });
-      //India-Nepal
-      var marker = new google.maps.Marker({ position: pokhara, map: map });
-      var marker3 = new google.maps.Marker({ position: kerala, map: map });
-      var marker6 = new google.maps.Marker({ position: darjeeling, map: map });
-      var marker6 = new google.maps.Marker({ position: Mumbai, map: map });
-      var marker6 = new google.maps.Marker({ position: Kathmandu, map: map });
-      //misc
-      var marker2 = new google.maps.Marker({ position: kabale, map: map });
-      var marker4 = new google.maps.Marker({ position: pr, map: map });
-      var marker9 = new google.maps.Marker({ position: belize, map: map });
-      var marker10 = new google.maps.Marker({ position: mexico, map: map });
-      var marker12 = new google.maps.Marker({ position: ontario, map: map });
-      var marker16 = new google.maps.Marker({ position: kampala, map: map });
+  //     // The map, centered at Uluru
+  //     var map = new google.maps.Map(
+  //       document.getElementById('map'), { zoom: 3, center: { lat:30, lng: 0} });
+  //     // The marker, positioned at Uluru
+  //     //USA
+  //     var marker5 = new google.maps.Marker({ position: cali, map: map });
+  //     var marker6 = new google.maps.Marker({ position: tx, map: map });
+  //     var marker7 = new google.maps.Marker({ position: sc, map: map });
+  //     var marker8 = new google.maps.Marker({ position: mi, map: map });
+  //     var marker11 = new google.maps.Marker({ position: bigsky, map: map });
+  //     var marker13 = new google.maps.Marker({ position: crestedbutte, map: map });
+  //     var marker14 = new google.maps.Marker({ position: az, map: map });
+  //     var marker15 = new google.maps.Marker({ position: ny, map: map });
+  //     var marker17 = new google.maps.Marker({ position: fl, map: map });
+  //     var marker18 = new google.maps.Marker({ position: amarillo, map: map });
+  //     var marker19 = new google.maps.Marker({ position: yellowstone, map: map });
+  //     var marker20 = new google.maps.Marker({ position: chicago, map: map });
+  //     //India-Nepal
+  //     var marker = new google.maps.Marker({ position: pokhara, map: map });
+  //     var marker3 = new google.maps.Marker({ position: kerala, map: map });
+  //     var marker6 = new google.maps.Marker({ position: darjeeling, map: map });
+  //     var marker6 = new google.maps.Marker({ position: Mumbai, map: map });
+  //     var marker6 = new google.maps.Marker({ position: Kathmandu, map: map });
+  //     //misc
+  //     var marker2 = new google.maps.Marker({ position: kabale, map: map });
+  //     var marker4 = new google.maps.Marker({ position: pr, map: map });
+  //     var marker9 = new google.maps.Marker({ position: belize, map: map });
+  //     var marker10 = new google.maps.Marker({ position: mexico, map: map });
+  //     var marker12 = new google.maps.Marker({ position: ontario, map: map });
+  //     var marker16 = new google.maps.Marker({ position: kampala, map: map });
 
-    }
+  //   }
 </script>
-<script
-  src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDmIhbLoznuw6boIdZ8aeBiQ1gJqGItMgw&callback=initMap">
-</script>
+<!-- <script
+  src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDSwE6t8lEC-pntk1dMsOy7F6PWtV9LMAw&callback=initMap">
+</script> -->
 </body>
 </html>
 
