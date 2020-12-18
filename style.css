@@ -527,6 +527,8 @@ object-fit: cover;
   background-color: rgb(253,252,233);
   padding: 10px;
   text-align: center;
+  font-size: smaller;
+
 }
 .content p{
   font-size:150%;
