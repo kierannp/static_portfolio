@@ -1,0 +1,69 @@
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Kieran Nehil</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="author" content="Kieran Nehil">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="thoughts">
+    
+    <div class="topnav" id="myTopnav">
+        <a onclick="window.location.href='index.html';">Home</a>
+        <a onclick="window.location.href='projects.html';">Portfolio</a>
+        <a onclick="window.location.href='about.html';">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    
+
+    <div class="header" onclick="window.location.href='index.html';">
+        <img class='logoimage' src="cfa18c749773c0e01b3aae98f82f1f07.png" onclick="window.location.href='/';" alt="Logo"
+            width="100" height="100">
+    </div>
+<div class="project_intro">
+
+    <h1>Background</h1>
+    <p>
+        This is a Python package that I created in my free time. I saw that there was no open source python package for performing diffusion simulations
+        with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries. 
+    </p>
+    <a href="https://pypi.org/project/fick1d">Checkout the Package!</a>
+</div>
+ 
+    <div class="project_picture">
+        <img src="thin_film_half.gif" >
+        <p>
+            In the semiconductor industry, solid solutions of boron and silicon are used to create P-type semiconductors. The added Boron in the silicon 
+            provides extra electrons that make the doped silicon more conductive. So how does one create a silicon chip with a specific composition of Boron? 
+            Initially a layer of Boron is added to the outside of the Silicon chip. The chip is then heated to allow for the Boron to diffuse into the silicon.
+            Based on the desired composition the sample is held at the desired temperature until the desired composition is reached.
+            The red line symbolizes the initial thickness of the Boron layer.
+        </p>
+        <p> 
+            Notice that the Boron permeates into the Silicon and loses it intital 100% composition.
+        </p>
+    </div>
+
+    <div class="project_picture">
+        <img src="sphere.gif">
+        <p>
+            Here's another example of composition over time for a metallic sphere.
+        </p>
+    </div>
+
+    </div>
+</body>
+
+</html>
